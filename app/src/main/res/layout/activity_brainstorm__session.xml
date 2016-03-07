@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        //TOPIC
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,6 +25,7 @@
             android:id="@+id/header_topic"
             android:gravity="center" />
 
+        //SPEC
         <TextView
             android:paddingTop="5dp"
             android:layout_width="match_parent"
@@ -34,6 +36,7 @@
             android:id="@+id/header_spec"
             android:gravity="center" />
 
+        //TIMER
         <TextView
             android:paddingTop="15dp"
             android:layout_width="match_parent"
@@ -42,7 +45,9 @@
             android:text="TIMER GOES HERE"
             android:id="@+id/timer_text_view"
             android:layout_below="@+id/header_spec"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 
 
@@ -57,6 +62,7 @@
 
     </ListView>
 
+    /* FOOTER - (ADD IDEA BUTTON)*/
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -67,13 +73,18 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/addIdea_EditText"
-            android:hint="Enter new idea...."/>
+            android:hint="Enter new idea...."
+            android:singleLine="true"/>
         <Button
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/addIdea_button"
-            android:text="ADD"/>
+            android:layout_marginLeft="10dp"
+            android:text="ADD"
+            android:imeOptions="actionDone"/>
     </LinearLayout>
 
     </LinearLayout>
